@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.display-img{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(30, 28, 25);
+}
+.display-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.indian-heading{
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-family: 'Great Vibes', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.indian-heading h1{
+    font-size: 5rem;
+}
+
+.indian-container{
+    
+    width: auto;
+    height: auto;
+    display: grid;
+    row-gap: 3vw;
+    justify-content: center;
+    column-gap: 5vh;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 10vh;
+}
+
+.indian-box{
+    position:relative ;
+    width: 20vw;
+    height: 40vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.indian-box ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    opacity: 0;
+}
+
+.indian-box:hover .img{
+    opacity: 0.5;
+}
+
+.indian-name:hover{
+    opacity: 1;
+}
+
+.indian-box img{
+    margin: 0;
+    width: 90%;
+    height: 90%;
+}
+
+ .indian-names{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indian-name{
+    opacity: 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #0f0f0f;
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px){
+
+    .indian-heading {
+        margin-top: 8vh;
+        margin-bottom: 4vh;
+    }
+
+    .indian-heading h1{
+        font-size: 3em;
+    }
+
+    .indian-container {
+        row-gap: 3vh;
+        column-gap: 6vw;
+        grid-template-columns: auto auto;
+    }
+    
+    .indian-box {
+        
+        width: 40vw;
+        height: 30vh;
+    }
+}

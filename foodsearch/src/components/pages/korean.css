@@ -1,0 +1,88 @@
+.display-img{
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(30, 28, 25);
+}
+.display-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.type-of-recipe{
+    margin-top: 3vh;
+    font-family: 'Great Vibes', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.type-of-recipe h1{
+    font-size: 5rem;
+}
+
+.Korean-container{
+    
+    width: auto;
+    height: auto;
+    display: grid;
+    row-gap: 3vw;
+    justify-content: center;
+    column-gap: 5vh;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 10vh;
+}
+
+.korean-box{
+    position:relative ;
+    width: 20vw;
+    height: 40vh;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.korean-box ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    opacity: 0;
+}
+
+.korean-box:hover .img{
+    opacity: 0.5;
+}
+
+.korean-name:hover{
+    opacity: 1;
+}
+
+.img{
+    width: 18vw;
+    height: 35vh;
+    margin-left: 1vw;
+    margin-top: 2.5vh;
+}
+
+ .korean-names{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.korean-name{
+    opacity: 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #0f0f0f;
+    align-self: center;
+    text-align: center;
+}

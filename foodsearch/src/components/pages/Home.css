@@ -1,0 +1,177 @@
+.imae{
+    width: 100%;
+    height: 80vh;
+}
+
+.imae img{
+    width: 100%;
+    height: 100%;
+}
+
+.abc{
+    text-decoration: none;
+}
+.cuisine-heading{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    font-family: 'Great Vibes', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 7rem;
+    text-decoration: underline;
+}
+
+.cuisine-container{
+    
+    width: auto;
+    height: auto;
+    display: grid;
+    row-gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vh;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+
+.cuisine-box{
+    position:relative ;
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cuisine-box ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(254, 254, 254);
+    opacity: 0;
+}
+
+.cuisine-box:hover img{
+    opacity: 0.5;
+}
+
+.cusine-name:hover{
+    opacity: 1;
+}
+
+.cuisine-box img{
+    width: 90%;
+    height: 90%;
+    margin: 0;
+}
+
+ .cusine-names{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cusine-name{
+    opacity: 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #0f0f0f;
+    align-self: center;
+    text-align: center;
+}
+
+.popular-heading{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    font-family: 'Great Vibes', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+.popular-container{
+    
+    width: auto;
+    height: auto;
+    display: grid;
+    row-gap: 3vw;
+    justify-content: center;
+    column-gap: 5vh;
+    grid-template-columns: auto auto auto auto;
+}
+
+.popular-box{
+    width: 20vw;
+    height: 40vh;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popular-box img{
+    width: 90%;
+    height: 90%;
+}
+
+
+@media screen and (max-width: 960px){
+    .imae{
+        height: 58vh;
+    }
+
+    .cuisine-heading {
+        margin-top: 12vh;
+        margin-bottom: 4vh;
+        font-size: 3.5rem;
+    }
+
+    .cuisine-container {
+        row-gap: 3vh;
+        column-gap: 6vw;
+        grid-template-columns: auto auto;
+    }
+    
+    .cuisine-box {
+        
+        width: 40vw;
+        height: 30vh;
+    }
+
+    .popular-heading {
+        margin-top: 20vh;
+        margin-bottom: 4vh;
+        font-size: 2.5rem;
+    }
+
+    .popular-container {
+        row-gap: 3vh;
+        column-gap: 6vw;
+        grid-template-columns: auto auto;
+    }
+    
+    .popular-box {
+        
+        width: 40vw;
+        height: 30vh;
+    }
+    
+    
+}
